@@ -10,7 +10,7 @@ const geocode = (address, callback) => {
         } else if(body.error) {
             callback(body.error.message, undefined)
         } else {
-            ({latitude, longitude, name} = body.data[0])
+            const {latitude, longitude, name} = body.data[0]
             address = decodeURIComponent(address)
             callback(undefined, { latitude, longitude, name})
         }

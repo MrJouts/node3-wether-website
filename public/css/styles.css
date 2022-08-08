@@ -103,3 +103,17 @@ button {
     padding: 8px;
 
 }
+
+#image img {
+    max-width: 25px;
+    width: 25px;
+    display: inline;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+
+}

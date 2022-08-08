@@ -14,10 +14,10 @@ var geocode = function geocode(address, callback) {
     } else if (body.error) {
       callback(body.error.message, undefined);
     } else {
-      var _body$data$ = body.data[0];
-      latitude = _body$data$.latitude;
-      longitude = _body$data$.longitude;
-      name = _body$data$.name;
+      var _body$data$ = body.data[0],
+          latitude = _body$data$.latitude,
+          longitude = _body$data$.longitude,
+          name = _body$data$.name;
       address = decodeURIComponent(address);
       callback(undefined, {
         latitude: latitude,
